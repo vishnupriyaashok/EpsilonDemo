@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Swag Labs Regression Test Suite" verbose="4" parallel="tests"
+	thread-count="4">
+	<listeners>
+		<listener
+			class-name="com.qa.example.listners.ExtentReportListener" />
+		<!-- <listener
+			class-name="com.qa.OpenCart.listners.TestAllureListener" />
+		<listener
+			class-name="com.qa.OpenCart.listners.AnnotationTransformer" /> -->
+
+	</listeners>
+
+	<!--  LOGIN TEST -->
+	 <test name="Swag Labs Login Page Test chrome">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.example.tests.LoginPageTests" />
+		</classes>
+	</test> 
+
+	<!--  FULL ORDER TEST -->
+	<!--test name="Swag Labs Cart Page Test chrome">
+			<parameter name="browser" value="chrome" />
+	
+			<classes>
+				<class name="com.qa.example.tests.CustomerInfoPageTests" />
+			</classes>
+	</test-->
+
+
+	<!-- <test name="Swag Labs Login Page Test firefox">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="com.qa.example.tests.LoginPageTests" />
+		</classes>
+	</test> 
+	 -->
+<!-- 	<test name="Swag Labs Products Page Test chrome">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.example.tests.ProductPageTests" />
+		</classes>
+	</test>
+	 -->
+	
+	
+	<!-- <test name="Swag Labs Cart Page Test chrome">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.example.tests.CartPageTests" />
+		</classes>
+	</test>
+	
+	-->
+	
+	
+
+</suite>

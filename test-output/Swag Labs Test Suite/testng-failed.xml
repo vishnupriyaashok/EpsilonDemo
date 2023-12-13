@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Swag Labs Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="1" parallel="tests" name="Swag Labs Products Ifo Page Test chrome(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.example.tests.ProductInfoPageTest">
+        <methods>
+          <include name="isAddToCartButtonVisibleTest"/>
+          <include name="isPriceVisibleTest"/>
+          <include name="isProductNameVisibleTest"/>
+          <include name="setUp"/>
+          <include name="productInfoPageSetUp"/>
+          <include name="isProductDesVisibleTest"/>
+        </methods>
+      </class> <!-- com.qa.example.tests.ProductInfoPageTest -->
+    </classes>
+  </test> <!-- Swag Labs Products Ifo Page Test chrome(failed) -->
+</suite> <!-- Failed suite [Swag Labs Test Suite] -->
